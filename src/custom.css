@@ -1,0 +1,15 @@
+.icon {
+  opacity: 1;
+}
+
+.icon:hover {
+  opacity: 0.75;
+}
+
+.border-bot {
+  border-bottom: 1px solid white;
+}
+
+.transition {
+  transition: background-color 0.2s linear;
+}
