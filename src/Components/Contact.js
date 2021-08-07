@@ -21,7 +21,7 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => alert("Message sent!", name, email, message))
       .catch((error) => alert(error));
   };
 

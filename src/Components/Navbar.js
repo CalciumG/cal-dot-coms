@@ -5,7 +5,6 @@ const Navbar = () => {
   const [colours, setColours] = useState("#2d3748");
 
   const listenScrollEvent = (e) => {
-    console.log(window.scrollY);
     if (window.scrollY > 450) {
       setColours("#1a202c");
     } else {
@@ -43,6 +42,6 @@ const Navbar = () => {
       </div>
     </header>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
