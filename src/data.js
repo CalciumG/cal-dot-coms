@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Just a simple front-end component made with Vue that lets a user select a monthly/annual pricing model and have the values update.",
     image: "./frontend-mentor-img.png",
-    link: "https://reactbootcamp.com",
+    link: "https://awesome-fermat-0ca119.netlify.app/",
   },
   {
     title: "Star Wars Weather App",
@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A weather app that requests a users current position to use as the default weather and shows a Star Wars location, but also allows a search for other locations.",
     image: "./star-wars-weather.png",
-    link: "https://reedbarger.com",
+    link: "https://calcium-weather-app.netlify.app/",
   },
   // {
   //   title: "DevChat",
