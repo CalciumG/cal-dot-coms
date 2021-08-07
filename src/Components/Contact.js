@@ -1,29 +1,30 @@
 import React from "react";
 import Socials from "./Socials";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  // const [name, setName] = React.useState("");
+  // const [email, setEmail] = React.useState("");
+  // const [message, setMessage] = React.useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  // function encode(data) {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!", name, email, message))
-      .catch((error) => alert(error));
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", name, email, message }),
+  //   })
+  //     .then(() => alert("Message sent!", name, email, message))
+  //     .catch((error) => alert(error));
+  // };
 
   return (
     <section id="contact">
@@ -45,7 +46,7 @@ const Contact = () => {
             src="./message.svg"
           />
         </div>
-        <form
+        {/* <form
           netlify
           name="contact"
           onSubmit={handleSubmit}
@@ -103,7 +104,8 @@ const Contact = () => {
           >
             Submit
           </button>
-        </form>
+        </form> */}
+        <ContactForm />
       </div>
     </section>
   );
