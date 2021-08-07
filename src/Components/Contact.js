@@ -18,13 +18,13 @@ export default function Contact() {
               href="https://github.com/calciumg"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            > </a>
             <a
               class="icon"
               href="https://www.linkedin.com/in/callum-j-gordon/"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            > </a>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
