@@ -12,8 +12,6 @@ class ContactForm extends React.Component {
     this.state = { name: "", email: "", message: "" };
   }
 
-  /* Here’s the juicy bit for posting the form submission */
-
   handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
@@ -35,15 +33,15 @@ class ContactForm extends React.Component {
         netlify
         name="contact"
         onSubmit={this.handleSubmit}
-        className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        className="lg:w-2/5 md:w-full flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
       >
         <input type="hidden" name="form-name" value="contact" />
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-          Hire Me
+          Get in touch
         </h2>
         <p className="leading-relaxed mb-5">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-          suscipit officia aspernatur veritatis. Asperiores, aliquid?
+          Feel free to send me a message if you have an opportunity you'd like
+          to discuss.
         </p>
         <div className="relative mb-4">
           <label htmlFor="name" className="leading-7 text-sm text-gray-400">
